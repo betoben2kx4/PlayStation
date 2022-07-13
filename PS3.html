@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 3</title>
+    <style>
+        body {
+            background-color: rgb(32, 33, 36);
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        #msg {
+            font-size: 16px;
+            font-weight: bolder;
+            color: rgb(0, 150, 255);
+        }
+        .btn {
+            background-color: rgb(32, 33, 36);
+            color: rgb(255, 255, 255);
+            border: solid 1px rgb(53, 54, 58);
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 18px;
+            width: 300px;
+            margin-left: .5%;
+            margin-right: .5%;
+            margin-top: .5%;
+            margin-bottom: .5%;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: rgb(53, 54, 58);
+        }
+    </style>
+    <script>
+        function dmsg() {
+            document.getElementById("msg").innerHTML = "-" 
+        }
+        function hen() {
+            document.getElementById("msg").innerHTML = "PS3 HomeBrew Enabler For (4.84 - 4.89) Hybrid-Firmware"
+        }
+        function ahen() {
+            document.getElementById("msg").innerHTML = "PS3 Alternate HomeBrew Enabler For (4.84 - 4.89) Hybrid-Firmware"
+        }
+        function cfw() {
+            document.getElementById("msg").innerHTML = "PS3 Custom Firmware Installer For (4.80 - 4.88) Original-Firmware"
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>PlayStation 3 Jailbreak</h1>
+        <br>
+        <p id="msg">-</p>
+        <br>
+        <a href="http://ps3xploit.com/hen/installer/index.html"><button class="btn" onmouseover="hen()" onmouseout="dmsg()">HEN</button></a>
+        <a href="http://ps3xploit.com/hen/installer/manual/index.html"><button class="btn" onmouseover="ahen()" onmouseout="dmsg()">Alternate HEN</button></a>
+        <br>
+        <a href="https://www.ps3xploit.net/bgtoolset/"><button class="btn" onmouseover="cfw()" onmouseout="dmsg()">CFW</button></a>
+    </div>
+    <div>
+        <p>For More Details about PS3 Jailbreak Click <a href="http://ps3xploit.com/" style="color: rgb(0, 150, 255);text-decoration: none;">HERE.</a></p>
+        <a href="https://www.psx-place.com/" style="color: rgb(0, 150, 255);text-decoration: none;">PlayStation Community</a>
+    </div>
+</body>
+</html>

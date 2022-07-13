@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        p {
+            font-weight: bold;
+            color: rgb(0, 100, 255);
+        }
+        span {
+            font-weight: normal;
+            color: rgb(53, 54, 58);
+        }
+    </style>
+    <script>
+        function load() {
+            document.getElementById("brinfo").innerHTML = navigator.userAgent;
+
+            var Mobile = /iPhone|iPad|iPod|Android|Tablet/.test(navigator.userAgent);
+            var element = document.getElementById('device');
+            if (Mobile) {
+            element.innerHTML = "Mobile";
+            } else {
+            element.innerHTML = "Desktop";
+            }
+
+            document.getElementById("resolution").innerHTML = screen.width + " x " + screen.height
+
+            document.getElementById("cpu").innerHTML = navigator.CPU;
+            document.getElementById("ram").innerHTML = navigator.deviceMemory;
+
+            document.getElementById("sys").innerHTML = navigator.platform;
+
+            document.getElementById("vendor").innerHTML = navigator.vendor;
+
+            document.getElementById("lan").innerHTML = navigator.languages;
+
+            document.getElementById("herf").innerHTML = location.href;
+
+            document.getElementById("time").innerHTML = Date();
+        }
+    </script>
+</head>
+<body onload="load()">
+    <h1>Access Denied</h1>
+    <p>You are trying to access : <span id="herf"></span></p>
+    <p>Your Device & IP address is not Registered on our Machine</p>
+    <hr>
+    <h3>System Information</h3>
+    <p>System : <span id="sys"></span></p>
+    <p>CPU : <span id="cpu"></span></p>
+    <p>RAM : <span id="ram"></span> <span>GB</span></p>
+    <p>System Type : <span id="device"></span></p>
+    <p>Screen Resolution : <span id="resolution"></span></p>
+    <p>Browser : <span id="brinfo"></span></p>
+    <p>Vendor : <span id="vendor"></span></p>
+    <p>Available Languages : <span id="lan"></span></p>
+    <p>Local Time : <span id="time"></span></p>
+</body>
+</html>
