@@ -1,0 +1,63 @@
+body {
+    width: 97%;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: system-ui;
+}
+.title {
+    background-color: rgb(240, 240, 240);
+    border: solid 1px rgb(240, 240, 240);
+    box-shadow: 0px 0px 1px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 7px;
+}
+.btn {
+    float: right;
+    width: 100px;
+    font-family: system-ui;
+    font-weight: bold;
+    padding: 5px;
+}
+.maindiv {
+    display: flex;
+    box-shadow: 0px 0px 3px;
+    border-radius: 7px;
+}
+.div0 {
+    flex: 20%;
+    border: solid 1px rgb(255, 255, 255);
+    padding: 20px;
+}
+.div1 {
+    flex: 70%;
+    border: solid 1px rgb(255, 255, 255);
+    padding: 10px;
+}
+.link {
+    width: fit-content;
+    border: solid 1px;
+    padding: 10px;
+    background-color: rgb(0, 30, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 100ms;
+    cursor: default;
+}
+.link:hover {
+    padding: 12px;
+}
+.redict {
+    color: rgb(0, 100, 255);
+    font-family: comic sans ms;
+    text-decoration: none;
+}
+.redict:hover {
+    text-decoration: underline;
+}
+#warn {
+    color: rgb(255, 0, 0);
+}
