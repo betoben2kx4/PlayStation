@@ -5,6 +5,10 @@ body {
     background-color: rgb(255, 255, 255);
     font-family: system-ui;
 }
+@font-face {
+  font-family: comic sans ms;
+  src: url(comic.ttf);
+}
 .title {
     background-color: rgb(240, 240, 240);
     border: solid 1px rgb(240, 240, 240);
